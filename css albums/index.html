@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CD-covers</title>
+    <meta name="author" content="Boyd Veenstra">
+  </head>
+  <body>
+    <div class="header">
+      <h2> My Album Collection </h2>
+    </div>
+    <div class="wrapper">
+      <div class="yeet">
+        <img src="image.png" alt="U2 album afbeelding">
+        <link rel="stylesheet" href="style.css">
+        <article>
+          <h3>U2</h3>
+          <h3>Song of experience</h3>
+          <ul>
+              <li>1. Love Is All We Have Left</li>
+              <li>2. Lights of Home</li>
+              <li>3. You’re The Best Thing About Me</li>
+              <li>4. Get out of Your Own Way</li>
+              <li>5. American Soul</li>
+              <li>6. Summer of love</li>
+              <li>7. Red Flag Day</li>
+          </ul>
+        </article>
+      </div>
+      <!-- einde van album -->
+      <div class="yeet">
+        <img src="revival.jpg" alt="Eminem album afbeelding">
+        <article>
+          <h3>Eminem</h3>
+          <h3>Revival</h3>
+          <ul>
+              <li>1. Walk On Water feat. Beyoncé</li>
+              <li>2. Believe</li>
+              <li>3. Chloraseptic feat. Phresher</li>
+              <li>4. Untouchable</li>
+              <li>5. Rive feat. Ed Sheeran</li>
+              <li>6. Remind Me (Intro)</li>
+              <li>7. Remind Me</li>
+          </ul>
+        </article>
+      </div>
+      <!-- einde van album -->
+      <div class="yeet">
+        <img src="sheeran.jpg" alt="Ed Sheeran album afbeelding">
+        <article>
+          <h3>Ed Sheeran</h3>
+          <h3>Divide</h3>
+          <ul>
+              <li>1. Ed Sheeran - Eraser</li>
+              <li>2. Ed Sheeran - Castle on the hill</li>
+              <li>3. Ed Sheeran - Dive</li>
+              <li>4. Ed Sheeran - Shape of you</li>
+              <li>5. Ed Sheeran - Perfect</li>
+              <li>6. Ed Sheeran - Galway girl</li>
+              <li>7. Ed Sheeran - Happier</li>
+          </ul>
+        </article>
+      </div>
+      <!-- einde van album -->
+      <div class="yeet">
+        <img src="marco.jpg" alt="Marco Borsato album afbeelding">
+        <article>
+          <h3>Marco Borsato</h3>
+          <h3>Thuis</h3>
+          <ul>
+              <li>1. Marco Borsato - Thuis</li>
+              <li>2. Marco Borsato - Wakker</li>
+              <li>3. Marco Borsato - Alsof Je Vliegt</li>
+              <li>4. Marco Borsato - Voor Jou</li>
+              <li>5. Marco Borsato - 18 Jaar</li>
+              <li>6. Marco Borsato - Vrienden</li>
+              <li>7. Marco Borsato - Niemand Anders</li>
+          </ul>
+        </article>
+      </div>
+      <!-- einde van album -->
+      <div class="yeet">
+        <img src="andre.jpg" alt="Andre Hazes album afbeelding">
+        <article>
+          <h3>Andre Hazes</h3>
+          <h3>Leef</h3>
+          <ul>
+              <li>1. Andre Hazes Jr. - Leef</li>
+              <li>2. Andre Hazes Jr. - Niet voor lief</li>
+              <li>3. Andre Hazes Jr. - Voor altijd in mijn hart</li>
+              <li>4. Andre Hazes Jr. - Ik leef mijn eigen leven</li>
+              <li>5. Andre Hazes Jr. - Wat is de waarheid</li>
+              <li>6. Andre Hazes Jr. - H?? ouwe</li>
+              <li>7. Andre Hazes Jr. - Als jij dat wilt</li>
+          </ul>
+        </article>
+      </div>
+      <!-- einde van album -->
+      <div class="yeet">
+        <img src="p!nk.jpg" alt="p!nk album afbeelding">
+        <article>
+          <h3>P!nk</h3>
+          <h3>Beautiful trauma</h3>
+          <ul>
+              <li>1. P!nk - Beautiful Trauma</li>
+              <li>2. P!nk feat. Eminem - Revenge</li>
+              <li>3. P!nk - Whatever You Want</li>
+              <li>4. P!nk - What About Us</li>
+              <li>5. P!nk - But We Lost It</li>
+              <li>6. P!nk - Barbies</li>
+              <li>7. P!nk - Where We Go</li>
+          </ul>
+        </article>
+      </div>
+      <!-- einde van album -->
+
+      <script>
+      let alleAlbums = document.querySelectorAll('.yeet');
+
+      const naarBoven = (e) => {
+        e.target.classList.remove('naar-beneden');
+        e.target.classList.add('naar-boven');
+      }
+
+      const naarBeneden = (e) => {
+        e.target.classList.remove('Naar-boven');
+        e.target.classList.add('naar-beneden');
+      }
+
+      for(let i=0; i<alleAlbums.length; i++) {
+        let yeet = alleAlbums[i];
+        yeet.addEventListener('mouseenter', naarBoven);
+        yeet.addEventListener('mouseleave', naarBeneden);
+      }
+    </script>
+
+    </div>
+    <footer>
+        <img src="gangster.jpg" alt="Footer Logo">
+        <span>Boyd Veenstra<br>Copyright &copy; 2019-420 </span>
+        <div class="validator">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+        </div>
+        <div class="validator2">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
